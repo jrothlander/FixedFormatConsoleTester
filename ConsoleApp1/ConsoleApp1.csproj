@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ZAdd.cs" />
     <Compile Include="Add.cs" />
     <Compile Include="ExternalReferences\DecimalsAttribute.cs" />
     <Compile Include="ExternalReferences\LengthAttribute.cs" />
