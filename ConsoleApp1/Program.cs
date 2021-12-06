@@ -17,6 +17,8 @@ namespace ConsoleApp1
 
             var zadd = new ZeroAdd();
             zadd.Test();
+            zadd.HalfAdjustTest();
+            zadd.HalfAdjustTest2();
 
             Console.ReadKey();
         }

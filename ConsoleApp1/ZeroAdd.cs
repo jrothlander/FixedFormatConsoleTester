@@ -10,6 +10,12 @@ namespace ConsoleApp1
         [Length(3), Decimals(1)] public decimal C = 32.0M;
         [Length(2), Decimals(0)] public decimal D = -10;
         [Length(5), Decimals(2)] public decimal V;
+        
+        //public ZeroAdd()
+        //{
+        //    Test();
+        //    HalfAdjustTest();
+        //}
 
         public void Test()
         {
@@ -21,6 +27,27 @@ namespace ConsoleApp1
             Console.WriteLine($" C:{C.Fixed("C")}");
             Console.WriteLine($" D:{D.Fixed("D")}");
             Console.WriteLine($" V:{V.Fixed("V")}");
+        }
+
+        [Length(3), Decimals(1)] public decimal E = 035M;
+        [Length(3), Decimals(1)] public decimal F = 4671M;
+        [Length(6), Decimals(2)] public decimal G = 0M;
+
+        public void HalfAdjustTest()
+        {
+            G = F / E;                              
+
+            Console.WriteLine($" G:{G.Fixed("G")}");
+        }
+
+        [Length(3), Decimals(1)] public decimal H = 1198.67M;
+        [Length(3), Decimals(1)] public decimal I = 0.5M;
+        [Length(6), Decimals(2)] public decimal J = 0M;
+        public void HalfAdjustTest2()
+        {
+            J = H + I;
+
+            Console.WriteLine($" J:{J.Fixed("J")}");
         }
 
     }
